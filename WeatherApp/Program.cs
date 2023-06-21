@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddKendo();
+//builder.Services.AddKendo();
 builder.Services.AddScoped<ApiService>();
 builder.Services.AddScoped<DbService>();
 builder.Services.AddDbContext<CityWeatherDbContext>(options =>

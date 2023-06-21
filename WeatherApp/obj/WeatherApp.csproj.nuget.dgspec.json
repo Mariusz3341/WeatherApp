@@ -59,10 +59,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
-            },
-            "Telerik.UI.for.AspNet.Core.Trial": {
-              "target": "Package",
-              "version": "[2023.1.425, )"
             }
           },
           "imports": [

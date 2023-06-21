@@ -14,14 +14,14 @@
                 
                 <div class="d-flex align-items-center">
                     <input asp-for="Cityname" class="form-control " />
-                    @*<button type="submit" class="btn btn-success">Get data</button>*@
-                    @(Html.Kendo().Button()
+                    <button type="submit" class="btn btn-success">Get</button>
+                    @*@(Html.Kendo().Button()
                         .Name("getDataButton")
                         .HtmlAttributes(new { type = "submit" })
                         .Content("Get data")
                         .Size(ComponentSize.Medium)
                         .ThemeColor(ThemeColor.Success)
-                        )
+                        )*@
                     
                 </div>
             </form>
@@ -59,40 +59,40 @@
                         <div class="col-md-auto">
                             <form method="get" asp-page="/City/Update">
                                 <input type="hidden" value="@Html.DisplayFor(modelitem => item.Id)" name="CityId" />
-                                @*<button type="submit"  class="btn btn-primary btn-sm")">Update</button>*@
-                                @(Html.Kendo().Button()
+                                <button type="submit"  class="btn btn-primary btn-sm")">Update</button>
+                                @*@(Html.Kendo().Button()
                                     .Name("update" + i + "Button")
                                     .HtmlAttributes(new { type = "submit" })
                                     .Content("Update")
                                     .Size(ComponentSize.Small)
                                     .ThemeColor(ThemeColor.Primary)
-                                    )
+                                    )*@
                             </form>
                         </div>
                         <div class="col-md-auto">
                             <form method="get" asp-page="/City/Edit">
                                 <input type="hidden" value="@Html.DisplayFor(modelitem => item.Id)" name="CityId" />
-                                @*<button type="submit" class="btn btn-warning btn-sm">Edit</button>*@
-                                @(Html.Kendo().Button()
+                                <button type="submit" class="btn btn-warning btn-sm">Edit</button>
+                                @*@(Html.Kendo().Button()
                                     .Name("warning" + i + "Button")
                                     .HtmlAttributes(new { type = "submit" })
                                     .Content("Edit")
                                     .Size(ComponentSize.Small)
                                     .ThemeColor(ThemeColor.Warning)
-                                    )
+                                    )*@
                             </form>
                         </div>
                         <div class="col-md-auto">
                             <form method="get" asp-page="/City/Delete">
                                 <input type="hidden" value="@Html.DisplayFor(modelitem => item.Id)" name="CityId" />
-                                @*<button type="submit" class="btn btn-danger btn-sm">Delete</button>*@
-                                @(Html.Kendo().Button()
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                @*@(Html.Kendo().Button()
                                     .Name("danger" + i + "Button")
                                     .HtmlAttributes(new { type = "submit" })
                                     .Content("Delete")
                                     .Size(ComponentSize.Small)
                                     .ThemeColor(ThemeColor.Error)
-                                    )
+                                    )*@
                             </form>
                         </div>
                     </div>
